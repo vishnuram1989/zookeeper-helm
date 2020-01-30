@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  zookeeper:
+  - created: "2020-01-30T18:11:56.474376+05:30"
+    description: Centralized service for maintaining configuration information, naming,
+      providing distributed synchronization, and providing group services.
+    digest: 73269897f4787011662de049beb2932ebe65602f8a15285673258111b3fbc168
+    home: https://zookeeper.apache.org/
+    icon: https://zookeeper.apache.org/images/zookeeper_small.gif
+    maintainers:
+    - email: lachlan@deis.com
+      name: Lachlan Evenson
+    - email: owensk@google.com
+      name: Kenneth Owens
+    name: zookeeper
+    sources:
+    - https://github.com/apache/zookeeper
+    - https://github.com/kow3ns/kubernetes-zookeeper
+    urls:
+    - zookeeper-1.0.tgz
+    version: "1.0"
+generated: "2020-01-30T18:11:56.47189+05:30"
