@@ -1,0 +1,12 @@
+apiVersion: v1
+description: Centralized service for maintaining configuration information, naming,
+  providing distributed synchronization, and providing group services.
+home: https://zookeeper.apache.org/
+icon: https://zookeeper.apache.org/images/zookeeper_small.gif
+maintainers:
+- email: vishnu.ram@accoliteindia.com
+  name: Vishnu Ram
+name: zookeeper
+sources:
+- https://github.com/vishnuram1989/zookeeper-helm
+version: "1.0.1"
