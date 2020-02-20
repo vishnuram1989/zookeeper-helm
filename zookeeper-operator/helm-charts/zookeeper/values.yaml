@@ -1,0 +1,42 @@
+image:
+  repository: gcr.io/google_containers/kubernetes-zookeeper
+  tag: 1.0-3.4.10
+  pullPolicy: IfNotPresent
+
+resources: {}
+  # limits:
+  #  cpu: 100m
+  #  memory: 128Mi
+  # requests:
+  #  cpu: 100m
+  #  memory: 128Mi
+
+AntiAffinity: hard
+
+ClientCnxns: 60
+ClientPort: 2181
+Cpu: "2"
+Heap: 2G
+Image: gcr.io/google_containers/kubernetes-zookeeper:1.0-3.4.10
+ImagePullPolicy: Always
+InitTicks: 10
+LeaderElectionPort: 3888
+LogLevel: INFO
+MaxSessionTimeout: 40000
+MaxUnavailable: 1
+Memory: 4Gi
+MinSessionTimeout: 4000
+ProbeInitialDelaySeconds: 15
+ProbeTimeoutSeconds: 5
+PurgeHours: 1
+ServerPort: 2888
+Servers: 5
+SnapRetain: 3
+SyncTicks: 5
+TickTimeMs: 2000
+UpdateStrategy: RollingUpdate
+
+
+persistance: 
+  enabled: true
+  Storage: 50Gi
